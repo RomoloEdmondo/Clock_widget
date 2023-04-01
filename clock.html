@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+</head>
+<body>
+ 
+    <div class="clock_k">
+        <div class="clock_f">
+            <div class="clock_b"></div>
+            <div class="clock_r hour_m"></div>
+            <div class="clock_r min_m"></div>
+            <div class="clock_s sec_m"></div>
+        </div>
+    </div>
+
+<script>
+    var clocksec = document.querySelector('.sec_m');
+    var clockmin = document.querySelector('.min_m');
+    var clockhou = document.querySelector('.hour_m');
+
+    function setDate() {
+        var s = moment().format("s");
+        var sd = ((s/60)*360)+90;
+        clocksec.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+
+        var m = moment().format("m");
+        var md = ((m/60)*360)+((s/60)*6)+90;
+        clockmin.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+
+        var h = moment().format("H");
+        var hd = ((h/12)*360)+((m/60)*30)+90;
+        clockhou.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+    }
+
+    setInterval(setDate, 1000);
+</script>
+
+<section class="container">
+<div class="row section">
+        <div class="col-md-3">
+            <h3>NEW YORK</h3>
+            <p>
+                <div class="clock_k1">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m1"></div>
+                        <div class="clock_r min_m1"></div>
+                        <div class="clock_s sec_m1"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+
+        <script>
+    var clocksec1 = document.querySelector('.sec_m1');
+    var clockmin1 = document.querySelector('.min_m1');
+    var clockhou1 = document.querySelector('.hour_m1');
+
+    function setDate() {
+
+        var timezone1 = moment.tz("America/New_York"); 
+
+        var s = timezone1.format("s");
+        var sd = ((s/60)*360)+90;
+        clocksec1.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+
+        var m = timezone1.format("m");
+        var md = ((m/60)*360)+((s/60)*6)+90;
+        clockmin1.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+
+        var h = timezone1.format("H");
+        var hd = ((h/12)*360)+((m/60)*30)+90;
+        clockhou1.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+    }
+
+    setInterval(setDate, 1000);
+</script>
+
+        <div class="col-md-3">
+            <h3>MOSCOW</h3>
+            <p>
+                <div class="clock_k2">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m2"></div>
+                        <div class="clock_r min_m2"></div>
+                        <div class="clock_s sec_m2"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        
+
+        <script>
+            var clocksec2 = document.querySelector('.sec_m2');
+            var clockmin2 = document.querySelector('.min_m2');
+            var clockhou2 = document.querySelector('.hour_m2');
+        
+            function setDate() {
+        
+                var timezone2 = moment.tz("Europe/Moscow"); 
+        
+                var s = timezone2.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec2.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone2.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin2.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone2.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou2.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+        
+            setInterval(setDate, 1000);
+        </script>
+        <div class="col-md-3">
+            <h3>TOKYO</h3>
+            <p>
+                <div class="clock_k3">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m3"></div>
+                        <div class="clock_r min_m3"></div>
+                        <div class="clock_s sec_m3"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <script>
+            var clocksec3 = document.querySelector('.sec_m3');
+            var clockmin3 = document.querySelector('.min_m3');
+            var clockhou3 = document.querySelector('.hour_m3');
+        
+            function setDate() {
+        
+                var timezone3 = moment.tz("Asia/Tokyo"); 
+        
+                var s = timezone3.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec3.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone3.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin3.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone3.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou3.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+        
+            setInterval(setDate, 1000);
+        </script>
+        <div class="col-md-3">
+            <h3>LONDON</h3>
+            <p>
+                <div class="clock_k4">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m4"></div>
+                        <div class="clock_r min_m4"></div>
+                        <div class="clock_s sec_m4"></div>
+                    </div>
+                </div>
+            </p>
+        </div>    
+        <script>
+            var clocksec4 = document.querySelector('.sec_m4');
+            var clockmin4 = document.querySelector('.min_m4');
+            var clockhou4 = document.querySelector('.hour_m4');
+        
+            function setDate() {
+        
+                var timezone4 = moment.tz("Europe/London"); 
+        
+                var s = timezone4.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec4.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone4.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin4.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone4.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou4.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+        
+            setInterval(setDate, 1000);
+        </script>
+    </div>
+        </section>
+        <section class="container">
+            <div class="row section">
+        <div class="col-md-3">
+            <h3>SYDNEY</h3>
+            <p>
+                <div class="clock_k5">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m5"></div>
+                        <div class="clock_r min_m5"></div>
+                        <div class="clock_s sec_m5"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <script>
+            var clocksec5 = document.querySelector('.sec_m5');
+            var clockmin5 = document.querySelector('.min_m5');
+            var clockhou5 = document.querySelector('.hour_m5');
+        
+            function setDate() {
+        
+                var timezone5 = moment.tz("Australia/Sydney"); 
+        
+                var s = timezone5.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec5.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone5.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin5.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone5.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou5.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+        
+            setInterval(setDate, 1000);
+        </script>
+        <div class="col-md-3">
+            <h3>ROME</h3>
+            <p>
+                <div class="clock_k6">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m6"></div>
+                        <div class="clock_r min_m6"></div>
+                        <div class="clock_s sec_m6"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <script>
+            var clocksec6 = document.querySelector('.sec_m6');
+            var clockmin6 = document.querySelector('.min_m6');
+            var clockhou6 = document.querySelector('.hour_m6');
+        
+            function setDate() {
+        
+                var timezone6 = moment.tz("Europe/Rome"); 
+        
+                var s = timezone6.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec6.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone6.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin6.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone6.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou6.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+            setInterval(setDate, 1000);
+        </script>
+
+        <div class="col-md-3">
+            <h3>LOS ANGELES</h3>
+            <p>
+                <div class="clock_k7">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m7"></div>
+                        <div class="clock_r min_m7"></div>
+                        <div class="clock_s sec_m7"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <script>
+            var clocksec7 = document.querySelector('.sec_m7');
+            var clockmin7 = document.querySelector('.min_m7');
+            var clockhou7 = document.querySelector('.hour_m7');
+        
+            function setDate() {
+        
+                var timezone7 = moment.tz("America/Los_Angeles"); 
+        
+                var s = timezone7.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec7.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone7.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin7.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone7.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou7.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+            setInterval(setDate, 1000);
+        </script>
+        <div class="col-md-3">
+            <h3>PECHINO</h3>
+            <p>
+                <div class="clock_k8">
+                    <div class="clock_f">
+                        <div class="clock_b1"></div>
+                        <div class="clock_r hour_m8"></div>
+                        <div class="clock_r min_m8"></div>
+                        <div class="clock_s sec_m8"></div>
+                    </div>
+                </div>
+            </p>
+        </div>
+        <script>
+            var clocksec8 = document.querySelector('.sec_m8');
+            var clockmin8 = document.querySelector('.min_m8');
+            var clockhou8 = document.querySelector('.hour_m8');
+        
+            function setDate() {
+        
+                var timezone8 = moment.tz("Asia/Pechino"); 
+        
+                var s = timezone8.format("s");
+                var sd = ((s/60)*360)+90;
+                clocksec8.style.transform = "rotate(" + sd + "deg)"; // calcolo secondi
+        
+                var m = timezone8.format("m");
+                var md = ((m/60)*360)+((s/60)*6)+90;
+                clockmin7.style.transform = "rotate(" + md + "deg)"; // calcolo secondi
+        
+                var h = timezone8.format("H");
+                var hd = ((h/12)*360)+((m/60)*30)+90;
+                clockhou8.style.transform = "rotate(" + hd + "deg)"; // calcolo secondi
+            }
+            setInterval(setDate, 1000);
+        </script>
+    </div>
+</section>
+
+<script src="moment.min.js"></script>
+<script src="moment-timezone-with-data.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</body>
+</html>

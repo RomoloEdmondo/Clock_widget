@@ -1,0 +1,245 @@
+.clock_k { /* quadrante*/
+    position: relative;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    border: 20px solid #232323;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+
+.clock_f { /* numeri */
+    background: url("clocknew.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* per rendere numeri visibili fuori dal bordo*/
+}
+
+.clock_b {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #232323;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.clock_b1 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #232323;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.clock_r { /* lancetta minuti */
+    position: absolute;
+    top: 50%;
+    height: 6px;
+    width: 45%;
+    left: 5%;
+    background-color: #232323;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.015s cubic-bezier(0, 2.85, 0.25, 1);
+}
+.clock_s { /* lancetta secondi */
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 45%;
+    left: 5%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.015s cubic-bezier(0, 2.85, 0.25, 1);
+}
+
+.hour_m {
+    width: 35%;
+    left: 15%;
+}
+.min_m {
+    width: 40%;
+    left: 10%;
+}
+.sec_m {
+    background-color: red;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+
+.clock_k1 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #b84949;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k2 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #1c7ac7;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k3 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #32c061;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k4 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #f8e805;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k5 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #e47b18;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k6 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #810891;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k7 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #9a999b;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+.clock_k8 { /* quadrante*/
+    position: relative;
+    margin: 14px auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid #00cfeb;
+    border-radius: 50%; /* per renderlo rotondo*/
+}
+
+.hour_m1 { /* lancetta ore*/
+    width: 35%;
+    left: 15%;
+}
+.min_m1 { /* lancetta minuti*/
+    width: 40%;
+    left: 10%;
+}
+.sec_m1 { /* lancetta Secondi*/
+    background-color: #b84949;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m2 {
+    width: 35%;
+    left: 15%;
+}
+.min_m2 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m2 {
+    background-color: #1c7ac7;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m3 {
+    width: 35%;
+    left: 15%;
+}
+.min_m3 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m3 {
+    background-color:  #32c061;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m4 {
+    width: 35%;
+    left: 15%;
+}
+.min_m4 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m4 {
+    background-color: #f8e805;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m5 {
+    width: 35%;
+    left: 15%;
+}
+.min_m5 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m5 {
+    background-color: #e47b18;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m6 {
+    width: 35%;
+    left: 15%;
+}
+.min_m6 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m6 {
+    background-color: #810891;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m7 {
+    width: 35%;
+    left: 15%;
+}
+.min_m7 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m7 {
+    background-color: #9a999b;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
+.hour_m8 {
+    width: 35%;
+    left: 15%;
+}
+.min_m8 {
+    width: 40%;
+    left: 10%;
+}
+.sec_m8 {
+    background-color:#00cfeb;
+    border-top-left-radius: 100%; /* x rendrela rotonda */
+    border-bottom-left-radius: 100%;
+}
